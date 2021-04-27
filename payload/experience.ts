@@ -8,7 +8,7 @@ const experience: IExperience.Payload = {
       position: '분과장',
       startedAt: '2020-03',
       descriptions: ['2020 NC Fellowship G*팀 프로젝트 총괄', '분과원들이 진행하는 프로젝트 상담'],
-      skillKeywords: ['python', 'pytorch', 'Unity(C#)'],
+      skillKeywords: ['Python', 'PyTorch', 'Unity(C#)'],
     },
     {
       title: 'Wing AI 분과',
@@ -16,7 +16,7 @@ const experience: IExperience.Payload = {
       startedAt: '2020-09',
       endedAt: '2020-12',
       descriptions: ['"Basic deep learning with Keras"의 스터디원'],
-      skillKeywords: ['python', 'Keras'],
+      skillKeywords: ['Python', 'Keras'],
     },
     {
       title: 'Infoteam',
