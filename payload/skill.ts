@@ -1,53 +1,29 @@
 import { ISkill } from '../component/skill/ISkill';
 
-const backend: ISkill.Skill = {
-  category: 'Back-end',
+const ai: ISkill.Skill = {
+  category: 'AI',
   items: [
     {
-      title: 'Node.js',
+      title: 'PyTorch',
       level: 3,
     },
     {
-      title: 'AWS',
-      level: 3,
-    },
-    {
-      title: 'PHP',
+      title: 'Keras',
       level: 2,
-    },
-    {
-      title: 'Java',
-      level: 1,
-    },
-    {
-      title: 'Python',
-      level: 1,
-    },
-    {
-      title: 'C/C++',
-      level: 1,
     },
   ],
 };
 
-const database: ISkill.Skill = {
-  category: 'Database',
+const gamedevelop: ISkill.Skill = {
+  category: 'Game Development',
   items: [
     {
-      title: 'MySQL',
+      title: 'Unity(C#)',
       level: 3,
     },
     {
-      title: 'Oracle',
+      title: 'C',
       level: 2,
-    },
-    {
-      title: 'Redis',
-      level: 2,
-    },
-    {
-      title: 'MongoDB',
-      level: 1,
     },
   ],
 };
@@ -56,52 +32,39 @@ const frontend: ISkill.Skill = {
   category: 'Front-end',
   items: [
     {
-      title: 'Next.js',
-      level: 2,
+      title: 'JavaScript',
+      level: 1,
     },
     {
       title: 'React.js',
       level: 2,
     },
     {
-      title: 'javascript',
+      title: 'HTML',
       level: 2,
     },
     {
-      title: 'HTML/CSS',
+      title: 'CSS',
       level: 2,
     },
   ],
 };
 
-const etc: ISkill.Skill = {
-  category: 'Etc',
+const webcrawling: ISkill.Skill = {
+  category: 'Web Crawling',
   items: [
     {
-      title: 'Ubuntu',
-    },
-    {
-      title: 'Vim',
-    },
-    {
-      title: 'Security',
-    },
-    {
-      title: 'VS Code',
-    },
-    {
-      title: 'Jira',
-    },
-    {
-      title: 'Confluence',
+      title: 'Python(Selenium, Beautiful Soup)',
+      level: 2,
     },
   ],
 };
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [backend, database, frontend, etc],
-  tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
+  skills: [ai, gamedevelop, frontend, webcrawling],
+  tooltip:
+    '1: 기초 수준\n2: 인터넷 튜토리얼을 참고하며 개발하는 수준\n3: 혼자서 작은 프로젝트를 해본 수준',
 };
 
 export default skill;

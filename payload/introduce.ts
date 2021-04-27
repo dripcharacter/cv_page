@@ -5,11 +5,15 @@ const introduce: IIntroduce.Payload = {
   disable: false,
 
   contents: [
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer massa magna, feugiat commodo arcu sed, sagittis sollicitudin tortor. Nullam diam ex, interdum nec lacus vel, ultrices pretium sapien. Proin bibendum non nibh eu aliquet. In sit amet arcu sed nisi tincidunt ultricies. Fusce magna tellus, egestas at pretium quis, rutrum et ante. Phasellus efficitur lectus felis, sed lacinia enim rhoncus ut. Sed id mi vitae neque aliquet porttitor. Fusce dignissim ipsum urna, at finibus lectus sodales ut. Nulla ut purus vestibulum, dapibus tellus consequat, porttitor purus. Nunc egestas tortor ut vehicula mollis.',
-    'Integer ut libero eu libero mattis rutrum at at urna. Integer non turpis ante. Suspendisse vestibulum odio id libero facilisis gravida. In ipsum est, pellentesque vestibulum tortor eu, bibendum imperdiet metus. Quisque ornare eget ex ut congue. Nam vel finibus sem. Phasellus id neque nibh. Nullam turpis velit, pharetra vitae mi non, bibendum maximus urna.',
+    '자신의 목표를 향해 최선을 다하고 성장해가는 것을 즐기는 개발자입니다.',
+    '-Python과 PyTorch를 이용한 SC2 ai 강화학습 경험',
+    '-Python Keras 사용 경험',
+    '-C, Unity(C#)를 이용한 간단한 게임 개발 경력',
+    '-Git 사용(Task별 branch 분기를 통한 관리)',
+    '-React.js로 SPA 개발 경험',
+    '자신이 맡은 일에 최선을 다하며 정확한 이해를 바탕으로 정확하게 일을 진행하게 싶습니다.',
   ],
-  sign: 'Love poem',
-  // sign: packageJson.author.name,
+  sign: '',
   // latestUpdated: '2019-07-24',
   latestUpdated: lastestUpdatedAt,
 };
