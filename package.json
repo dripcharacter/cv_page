@@ -48,14 +48,14 @@
     "chalk": "^4.1.0",
     "debug": "^4.3.1",
     "jquery": "^3.5.1",
-    "luxon": "^1.26.0",
+    "luxon": "^1.28.1",
     "next": "^10.0.7",
     "next-images": "^1.7.0",
     "next-seo": "^4.20.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "reactstrap": "^8.9.0",
-    "shelljs": "^0.8.4",
+    "shelljs": "^0.8.5",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
@@ -80,7 +80,7 @@
     "eslint-plugin-react-hooks": "^2.5.1",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.2",
-    "typedoc": "^0.19.2",
+    "typedoc": "^0.24.4",
     "typescript": "^4.2.2"
   },
   "resolutions": {

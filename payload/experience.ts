@@ -7,7 +7,9 @@ const experience: IExperience.Payload = {
       title: 'NetAI 연구실 학부생 인턴',
       position: '학부생 인턴',
       startedAt: '2021-12',
-      descriptions: ['Kubernetes 기반의 Cloud-Native Edge Cluster에서의 cilium, Tetragon 기반의 보안 환경 구축'],
+      descriptions: [
+        'Kubernetes 기반의 Cloud-Native Edge Cluster에서의 cilium, Tetragon 기반의 보안 환경 구축',
+      ],
       skillKeywords: ['Kubernetes', 'Docker', 'eBPF/cilium', 'Tetragon'],
     },
     {

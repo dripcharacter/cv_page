@@ -44,12 +44,12 @@ const project: IProject.Payload = {
       where: '팀 프로젝트',
       descriptions: [
         {
-          content: 'csv파일을 통해 network topology를 주었을 때 최적의 Caching server 위치를 알아내는 simulation을 개발함.',
+          content:
+            'csv파일을 통해 network topology를 주었을 때 최적의 Caching server 위치를 알아내는 simulation을 개발함.',
           weight: 'MEDIUM',
           descriptions: [
             {
-              content:
-                '멀티쓰레딩의 기초를 익히며 host간의 통신을 개발함.',
+              content: '멀티쓰레딩의 기초를 익히며 host간의 통신을 개발함.',
             },
           ],
         },
@@ -62,7 +62,8 @@ const project: IProject.Payload = {
       where: '개인 프로젝트',
       descriptions: [
         {
-          content: 'MonteCarlo와 관련된 실험, 알고리즘들을 실제로 simulation에서 사용해보며 closed system/isolated system의 simulation을 구현했다.',
+          content:
+            'MonteCarlo와 관련된 실험, 알고리즘들을 실제로 simulation에서 사용해보며 closed system/isolated system의 simulation을 구현했다.',
           weight: 'MEDIUM',
           descriptions: [
             {
@@ -84,7 +85,8 @@ const project: IProject.Payload = {
       where: '팀 프로젝트',
       descriptions: [
         {
-          content: '많은 사람들에게 자기 취향의 커피를 제공하기 위한 지표로 필요한 Coffee Flavour Wheel로 data를 가공하는 부분을 구현함'
+          content:
+            '많은 사람들에게 자기 취향의 커피를 제공하기 위한 지표로 필요한 Coffee Flavour Wheel로 data를 가공하는 부분을 구현함',
         },
       ],
     },
@@ -95,7 +97,8 @@ const project: IProject.Payload = {
       where: '개인 프로젝트',
       descriptions: [
         {
-          content: 'Mutex와 pthread를 이용하여 동시성 문제가 발생하지 않는 멀티 유저 수강신청 시뮬레이터를 개발함.'
+          content:
+            'Mutex와 pthread를 이용하여 동시성 문제가 발생하지 않는 멀티 유저 수강신청 시뮬레이터를 개발함.',
         },
       ],
     },
