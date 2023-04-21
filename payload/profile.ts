@@ -26,7 +26,7 @@ const profile: IProfile.Payload = {
     },
     {
       title: 'https://github.com/dripcharacter',
-      link: 'https://github.com/dripcharacter/resume-nextjs',
+      link: 'https://github.com/dripcharacter',
       icon: faGithub,
     },
   ],

@@ -4,54 +4,6 @@ const project: IProject.Payload = {
   disable: false,
   list: [
     {
-      title: '모바일 게임 이벤트 컷 예측',
-      startedAt: '2019-11',
-      endedAt: '2019-12',
-      where: '개인 프로젝트',
-      descriptions: [
-        {
-          content: '해외 모바일 게임 경쟁형 이벤트 보상컷 예측을 목표로 하는 프로젝트',
-          weight: 'MEDIUM',
-          descriptions: [
-            { content: 'Beautiful Soup 기반 과거 이벤트 관련 정보 크롤러 개발함' },
-            {
-              content:
-                'TF를 이용하여 이벤트 보상을 통해 보상컷을 예측할 수 있는 Neural Network를 제작함',
-            },
-          ],
-        },
-      ],
-    },
-    {
-      title: '지뢰 찾기 만들기',
-      startedAt: '2020-03',
-      endedAt: '2020-03',
-      where: '개인 프로젝트',
-      descriptions: [
-        { content: 'C를 이용하여 레트로 게임 중 하나인 "지뢰 찾기"를 만들었습니다.' },
-        {
-          content:
-            '2차원 배열을 여러층 만들어 각 층마다 게임에 관한 여러 정보를 담아 지뢰 찾기의 기능들을 구현함.',
-        },
-      ],
-    },
-    {
-      title: '턴제 게임 개발',
-      startedAt: '2019-12',
-      endedAt: '2020-07',
-      where: '팀 프로젝트',
-      descriptions: [
-        {
-          content: '턴제 격자형 보드게임으로 메인 프로그래머로 게임 기능 개발을 담당함.',
-          weight: 'MEDIUM',
-          descriptions: [
-            { content: 'A* 알고리즘을 변형하여 노드 간의 최단 경로를 찾도록 설계함.' },
-            { content: '다양한 적 NPC의 특성에 맞는 행동패턴을 개발함.' },
-          ],
-        },
-      ],
-    },
-    {
       title: 'GISTORY(GIST 학생 커뮤니티) 제작',
       startedAt: '2020-04',
       where: '팀 프로젝트',
@@ -82,6 +34,68 @@ const project: IProject.Payload = {
                 'starcraft2 wiki를 참고로 유닛들 간의 주요 상성관계를 베이스로 하여 ai를 개발함.',
             },
           ],
+        },
+      ],
+    },
+    {
+      title: 'Optimal Condition for Caching server',
+      startedAt: '2021-05',
+      endedAt: '2021-08',
+      where: '팀 프로젝트',
+      descriptions: [
+        {
+          content: 'csv파일을 통해 network topology를 주었을 때 최적의 Caching server 위치를 알아내는 simulation을 개발함.',
+          weight: 'MEDIUM',
+          descriptions: [
+            {
+              content:
+                '멀티쓰레딩의 기초를 익히며 host간의 통신을 개발함.',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      title: 'MonteCarlo_Implementation',
+      startedAt: '2021-09',
+      endedAt: '2021-12',
+      where: '개인 프로젝트',
+      descriptions: [
+        {
+          content: 'MonteCarlo와 관련된 실험, 알고리즘들을 실제로 simulation에서 사용해보며 closed system/isolated system의 simulation을 구현했다.',
+          weight: 'MEDIUM',
+          descriptions: [
+            {
+              content:
+                'Buffon Needle실험, 원 넓이 구하기 실험 등을 구현해보며 pseudo-random의 개념을 잡음',
+            },
+            {
+              content:
+                'Wang Landau Algorithm, Metropolis Algorithm을 통해 Closed system의 equilibrium state로 가는 simulation을 구현함',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      title: 'CIY(Coffee It Yourself)',
+      startedAt: '2022-03',
+      endedAt: '2022-06',
+      where: '팀 프로젝트',
+      descriptions: [
+        {
+          content: '많은 사람들에게 자기 취향의 커피를 제공하기 위한 지표로 필요한 Coffee Flavour Wheel로 data를 가공하는 부분을 구현함'
+        },
+      ],
+    },
+    {
+      title: 'NDT(Never Dead Ticket)',
+      startedAt: '2022-03',
+      endedAt: '2022-06',
+      where: '개인 프로젝트',
+      descriptions: [
+        {
+          content: 'Mutex와 pthread를 이용하여 동시성 문제가 발생하지 않는 멀티 유저 수강신청 시뮬레이터를 개발함.'
         },
       ],
     },

@@ -1,11 +1,33 @@
 import { ISkill } from '../component/skill/ISkill';
 
+const DevSecOps: ISkill.Skill = {
+  category: 'DevSecOps',
+  items: [
+    {
+      title: 'Kubernetes',
+      level: 2,
+    },
+    {
+      title: 'Docker',
+      level: 2,
+    },
+    {
+      title: 'eBPF/cilium',
+      level: 2,
+    },
+    {
+      title: 'Tetragon',
+      level: 2,
+    },
+  ],
+};
+
 const ai: ISkill.Skill = {
   category: 'AI',
   items: [
     {
       title: 'PyTorch',
-      level: 3,
+      level: 2,
     },
     {
       title: 'Keras',
@@ -19,11 +41,25 @@ const gamedevelop: ISkill.Skill = {
   items: [
     {
       title: 'Unity(C#)',
-      level: 3,
+      level: 2,
+    },
+  ],
+};
+
+const backend: ISkill.Skill = {
+  category: 'Back-end',
+  items: [
+    {
+      title: 'Flask',
+      level: 2,
     },
     {
-      title: 'C',
-      level: 2,
+      title: 'PostgreSQL',
+      level: 1,
+    },
+    {
+      title: 'Redis',
+      level: 1,
     },
   ],
 };
@@ -50,19 +86,35 @@ const frontend: ISkill.Skill = {
   ],
 };
 
-const webcrawling: ISkill.Skill = {
-  category: 'Web Crawling',
+const basic: ISkill.Skill = {
+  category: 'Basic',
   items: [
     {
-      title: 'Python(Selenium, Beautiful Soup)',
+      title: 'Python',
+      level: 3,
+    },
+    {
+      title: 'C',
+      level: 3,
+    },
+    {
+      title: 'C++',
+      level: 3,
+    },
+    {
+      title: 'Rust',
       level: 2,
+    },
+    {
+      title: 'Scala',
+      level: 1,
     },
   ],
 };
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [ai, gamedevelop, frontend, webcrawling],
+  skills: [DevSecOps, ai, gamedevelop, backend, frontend, basic],
   tooltip:
     '1: 기초 수준\n2: 인터넷 튜토리얼을 참고하며 개발하는 수준\n3: 혼자서 작은 프로젝트를 해본 수준',
 };

@@ -11,6 +11,12 @@ const education: IEducation.Payload = {
       // endedAt: '2010-02',
     },
     {
+      title: '한국과학기술원',
+      subTitle: '2022학년도 가을학기 과기특성화대학 교류수학',
+      startedAt: '2022-09',
+      endedAt: '2022-12',
+    },
+    {
       title: '대구가톨릭대학교사범대학부속무학고등학교',
       subTitle: '졸업',
       startedAt: '2016-03',
