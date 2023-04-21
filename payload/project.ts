@@ -6,6 +6,7 @@ const project: IProject.Payload = {
     {
       title: 'GISTORY(GIST 학생 커뮤니티) 제작',
       startedAt: '2020-04',
+      endedAt: '2021-06',
       where: '팀 프로젝트',
       descriptions: [
         {
