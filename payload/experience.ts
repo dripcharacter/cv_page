@@ -13,11 +13,27 @@ const experience: IExperience.Payload = {
       skillKeywords: ['Kubernetes', 'Docker', 'eBPF/cilium', 'Tetragon'],
     },
     {
+      title: 'DPNM 연구실 학부생 인턴',
+      position: '학부생 인턴',
+      startedAt: '2023-07',
+      endedAt: '2023-08',
+      descriptions: ['Network Management에 접목시키기 위한 Generative AI에 대한 조사'],
+      skillKeywords: ['Generative AI', 'Transformer', 'CLIP', 'Latent Diffusion'],
+    },
+    {
       title: '컴퓨터 시스템 이론 및 실험',
       position: '리드 조교',
       startedAt: '2023-03',
+      endedAt: '2023-06',
       descriptions: ['SmartX-Mini실험의 자료 업데이트 및 매주 진행'],
       skillKeywords: ['Kubernetes', 'Docker', 'Apache Kafka', 'influxDB'],
+    },
+    {
+      title: '시스템 프로그래밍',
+      position: '조교',
+      startedAt: '2023-09',
+      descriptions: ['UNIX system에 대한 실습 진행 보조'],
+      skillKeywords: ['UNIX', 'Linux'],
     },
     {
       title: 'Wing 게임 개발 분과',
