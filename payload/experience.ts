@@ -42,6 +42,7 @@ const experience: IExperience.Payload = {
       title: '시스템 프로그래밍',
       position: '조교',
       startedAt: '2023-09',
+      endedAt: '2023-12',
       descriptions: ['UNIX system에 대한 실습 진행 보조'],
       skillKeywords: ['UNIX', 'Linux'],
     },
