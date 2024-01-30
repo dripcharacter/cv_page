@@ -22,6 +22,16 @@ const DevSecOps: ISkill.Skill = {
   ],
 };
 
+const ComputerNetworking: ISkill.Skill = {
+  category: 'ComputerNetworking',
+  items: [
+    {
+      title: '802.11',
+      level: 1,
+    },
+  ],
+};
+
 const ai: ISkill.Skill = {
   category: 'AI',
   items: [
@@ -114,7 +124,7 @@ const basic: ISkill.Skill = {
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [DevSecOps, ai, gamedevelop, backend, frontend, basic],
+  skills: [DevSecOps, ComputerNetworking, ai, gamedevelop, backend, frontend, basic],
   tooltip:
     '1: 기초 수준\n2: 인터넷 튜토리얼을 참고하며 개발하는 수준\n3: 혼자서 작은 프로젝트를 해본 수준',
 };

@@ -4,9 +4,19 @@ const experience: IExperience.Payload = {
   disable: false,
   list: [
     {
+      title: 'AIoT 연구실 석사생',
+      position: '석사과정생',
+      startedAt: '2024-01',
+      descriptions: [
+        '802.11, UWB같은 통신기술을 이용한 연구와 컴퓨터 네트워킹 규격에 대한 공부 중',
+      ],
+      skillKeywords: ['802.11', 'Computer Networking'],
+    },
+    {
       title: 'NetAI 연구실 학부생 인턴',
       position: '학부생 인턴',
       startedAt: '2021-12',
+      endedAt: '2024-01',
       descriptions: [
         'Kubernetes 기반의 Cloud-Native Edge Cluster에서의 cilium, Tetragon 기반의 보안 환경 구축',
       ],

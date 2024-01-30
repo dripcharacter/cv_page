@@ -103,6 +103,28 @@ const project: IProject.Payload = {
         },
       ],
     },
+    {
+      title: 'Kirby_RL_based_LLM_Agent',
+      startedAt: '2023-11',
+      endedAt: '2023-12',
+      where: '팀 프로젝트',
+      descriptions: [
+        {
+          content:
+            "강화학습을 기반으로 하며 GPT-4V와 같은 LLM을 접목시킨 Kirby's Dream Land 게임 agent를 개발함",
+          weight: 'MEDIUM',
+          descriptions: [
+            {
+              content: 'PyTorch, PyBoy를 이용한 DDQN기반의 강화학습 게임 agent를 fine-tuning함',
+            },
+            {
+              content:
+                'LLM인 GPT-4V를 게임 agent에 접목시켜 기존 agent가 해결하기 어려운 구간을 해결함',
+            },
+          ],
+        },
+      ],
+    },
   ],
 };
 

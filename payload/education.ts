@@ -5,10 +5,16 @@ const education: IEducation.Payload = {
 
   list: [
     {
+      title: 'POSTECH 대학원',
+      subTitle: '컴퓨터공학과 석사과정 재학',
+      startedAt: '2024-02',
+      // endedAt: '2024-02',
+    },
+    {
       title: '광주과학기술원',
       subTitle: '전기전자컴퓨터공학부 학사과정 재학',
       startedAt: '2019-03',
-      // endedAt: '2010-02',
+      endedAt: '2024-02',
     },
     {
       title: '한국과학기술원',
