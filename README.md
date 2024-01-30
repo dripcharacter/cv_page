@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/uyu423/resume-nextjs/raw/master/logo.jpg" alt="Resume Next.js Logo">
+  <img src="https://github.com/dripcharacter/cv_page/blob/master/logo.jpg" alt="Resume Next.js Logo">
   <br/><hr/>
   <a href="https://github.com/uyu423/resume-nextjs"><img src="https://img.shields.io/github/stars/uyu423/resume-nextjs.svg?style=popout" alt="Github Star"/></a>
   <a href="https://circleci.com/gh/uyu423/resume-nextjs"><img src="https://circleci.com/gh/uyu423/resume-nextjs.svg?style=shield" alt="CircleCI"/></a>
