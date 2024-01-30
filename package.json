@@ -18,10 +18,10 @@
     "lint": "eslint 'component/**/*' 'pages/**/*' 'payload/**/*' '*.ts' --fix",
     "typedoc": "typedoc --excludeExternals"
   },
-  "homepage": "https://dripcharacter.github.io/resume-nextjs",
+  "homepage": "https://dripcharacter.github.io/cv_page",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dripcharacter/resume-nextjs.git"
+    "url": "git+https://github.com/dripcharacter/cv_page.git"
   },
   "keywords": [
     "resume",
