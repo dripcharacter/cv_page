@@ -12,7 +12,7 @@ const education: IEducation.Payload = {
     },
     {
       title: '광주과학기술원',
-      subTitle: '전기전자컴퓨터공학부 학사과정 재학',
+      subTitle: '전기전자컴퓨터공학부 학사과정 졸업',
       startedAt: '2019-03',
       endedAt: '2024-02',
     },
