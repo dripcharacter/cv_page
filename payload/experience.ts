@@ -8,9 +8,9 @@ const experience: IExperience.Payload = {
       position: '석사과정생',
       startedAt: '2024-01',
       descriptions: [
-        '802.11, UWB같은 통신기술을 이용한 연구와 컴퓨터 네트워킹 규격에 대한 공부 중',
+        '802.11, UWB같은 통신기술를 통해 localization, orientation estimation을 연구하고 있습니다',
       ],
-      skillKeywords: ['802.11', 'Computer Networking'],
+      skillKeywords: ['Ultra-Wideband (UWB)', '802.11', 'Computer Networking'],
     },
     {
       title: 'NetAI 연구실 학부생 인턴',
