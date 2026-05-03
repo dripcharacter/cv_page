@@ -5,10 +5,16 @@ const education: IEducation.Payload = {
 
   list: [
     {
+      title: 'KAIST 대학원',
+      subTitle: '전산학부 박사과정 재학',
+      startedAt: '2026-02',
+      // endedAT: '2031-02'
+    },
+    {
       title: 'POSTECH 대학원',
-      subTitle: '컴퓨터공학과 석사과정 재학',
+      subTitle: '컴퓨터공학과 석사과정 졸업',
       startedAt: '2024-02',
-      // endedAt: '2024-02',
+      endedAt: '2026-02',
     },
     {
       title: '광주과학기술원',

@@ -4,9 +4,20 @@ const experience: IExperience.Payload = {
   disable: false,
   list: [
     {
+      title: 'ANLAB 연구실 박사생',
+      position: '박사과정생',
+      startedAt: '2026-01',
+      // endedAt: '2031-01',
+      descriptions: [
+        'NPU, GPU와 같은 AI accelerator와 DataCenter 내부 network를 위한 시스템을 연구하고 있습니다',
+      ],
+      skillKeywords: ['AI accelerator'],
+    },
+    {
       title: 'AIoT 연구실 석사생',
       position: '석사과정생',
       startedAt: '2024-01',
+      endedAt: '2026-01',
       descriptions: [
         '802.11, UWB같은 통신기술를 통해 localization, orientation estimation을 연구하고 있습니다',
       ],

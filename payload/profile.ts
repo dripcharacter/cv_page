@@ -14,8 +14,8 @@ const profile: IProfile.Payload = {
   },
   contact: [
     {
-      title: 'wsms8646@gmail.com',
-      link: 'mailto:wsms8646@gmail.com',
+      title: 'mskim8646@kaist.ac.kr',
+      link: 'mailto:mskim8646@kaist.ac.kr',
       icon: faEnvelope,
     },
     {
