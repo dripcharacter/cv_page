@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ $home := .Site.Home }}
+<article class="news-page">
+  <div class="section-head">
+    <h1>{{ .Title }}</h1>
+  </div>
+  <p class="lead">{{ i18n "news_subtitle" }}</p>
+
+  <ul class="news-list">
+    {{ range $home.Params.news }}
+      {{ partial "news-item.html" . }}
+    {{ end }}
+  </ul>
+
+  <p class="back"><a href="{{ "/#news" | relLangURL }}">← {{ i18n "back_home" }}</a></p>
+</article>
+{{ end }}

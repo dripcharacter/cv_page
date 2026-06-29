@@ -1,0 +1,142 @@
+{{ define "main" }}
+
+{{/* ============ HERO ============ */}}
+<section class="hero" id="top">
+  <div class="hero-inner">
+    {{ with .Site.Params.photo }}
+    <img class="avatar" src="{{ . | relURL }}" alt="{{ $.Params.name }}" loading="eager" width="160" height="160">
+    {{ end }}
+    <div class="hero-text">
+      <h1>{{ .Params.name | default .Site.Title }}</h1>
+      <p class="tagline">{{ .Params.tagline }}</p>
+      <p class="affiliation">{{ .Params.affiliation }}{{ with .Params.location }} · {{ . }}{{ end }}</p>
+      {{ partial "social.html" . }}
+    </div>
+  </div>
+  {{ $build := now.Format "2006-01-02" }}
+  <div class="last-updated">
+    {{ i18n "last_updated" }}
+    <time datetime="{{ $build }}" data-updated="{{ $build }}">{{ $build }}</time><span class="lu-ago"></span>
+  </div>
+</section>
+
+{{/* ============ ABOUT ============ */}}
+<section class="section" id="about">
+  <h2>{{ i18n "about" }}</h2>
+  {{/* Intro and free-form body are hidden for now — uncomment to show them again.
+  {{ with .Params.intro }}<p class="lead">{{ . }}</p>{{ end }}
+  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  */}}
+
+  {{ with .Params.interests }}
+  <h3 class="subhead">{{ i18n "research_interests" }}</h3>
+  <ul class="interests">
+    {{ range . }}<li>{{ . }}</li>{{ end }}
+  </ul>
+  {{ end }}
+</section>
+
+{{/* ============ NEWS (recent N, full list on /news/) ============ */}}
+{{ with .Params.news }}
+<section class="section" id="news">
+  <div class="section-head">
+    <h2>{{ i18n "news" }}</h2>
+    <a class="see-all" href="{{ "/news/" | relLangURL }}">{{ i18n "view_all_news" }} →</a>
+  </div>
+  {{ $limit := $.Site.Params.newsLimit | default 5 }}
+  <ul class="news-list">
+    {{ range first $limit . }}
+      {{ partial "news-item.html" . }}
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
+
+{{/* ============ PUBLICATIONS (searchable + tag filter) ============ */}}
+{{ with .Params.publications }}
+<section class="section" id="publications">
+  <h2>{{ i18n "publications" }}</h2>
+
+  {{/* collect unique tags */}}
+  {{ $tags := slice }}
+  {{ range . }}{{ range .tags }}{{ $tags = $tags | append . }}{{ end }}{{ end }}
+  {{ $tags = $tags | uniq | sort }}
+
+  <div class="pub-controls">
+    <input type="search" id="pub-search" autocomplete="off"
+           placeholder="{{ i18n "search_placeholder" }}" aria-label="{{ i18n "search_placeholder" }}">
+    {{ if $tags }}
+    <div class="chips" id="pub-tags" data-tag-filter>
+      <button class="chip active" data-tag="*">{{ i18n "all_tags" }}</button>
+      {{ range $tags }}<button class="chip" data-tag="{{ . }}">{{ . }}</button>{{ end }}
+    </div>
+    {{ end }}
+  </div>
+
+  <p class="muted" id="pub-empty" hidden>{{ i18n "no_results" }}</p>
+
+  <ol class="pub-list" id="pub-list" reversed>
+    {{ range . }}
+    {{ $search := lower (printf "%s %s %s %s" .title (.authors | plainify) .venue (delimit .tags " ")) }}
+    <li class="pub" data-tags="{{ delimit .tags "," }}" data-search="{{ $search }}">
+      {{ with .thumbnail }}
+      <div class="pub-thumb"><img src="{{ . | relURL }}" alt="" loading="lazy"></div>
+      {{ end }}
+      <div class="pub-body">
+        <h3 class="pub-title">{{ .title }}</h3>
+        {{ with .authors }}<div class="pub-authors">{{ . | safeHTML }}</div>{{ end }}
+        <div class="pub-venue">{{ with .venue }}<em>{{ . }}</em>{{ end }}{{ with .year }}<span class="pub-year">{{ . }}</span>{{ end }}</div>
+        <div class="pub-foot">
+          {{ with .tags }}<div class="tags">{{ range . }}<span class="tag">{{ . }}</span>{{ end }}</div>{{ end }}
+          <div class="pub-links">
+            {{ with .doi }}<a href="{{ . }}" class="pill pill-doi">DOI</a>{{ end }}
+            {{ with .links }}{{ range $k, $v := . }}{{ with $v }}<a href="{{ . }}" class="pill">{{ $k }}</a>{{ end }}{{ end }}{{ end }}
+          </div>
+        </div>
+      </div>
+    </li>
+    {{ end }}
+  </ol>
+</section>
+{{ end }}
+
+{{/* ============ EDUCATION ============ */}}
+{{ with .Params.education }}
+<section class="section" id="education">
+  <h2>{{ i18n "education" }}</h2>
+  <ul class="timeline">
+    {{ range . }}
+    <li>
+      <div class="tl-period">{{ .period }}</div>
+      <div class="tl-body">
+        <div class="tl-title">{{ .degree }}</div>
+        <div class="tl-org">{{ .org }}{{ with .note }} · {{ . }}{{ end }}</div>
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
+
+{{/* ============ EXPERIENCE ============ */}}
+{{ with .Params.experience }}
+<section class="section" id="experience">
+  <h2>{{ i18n "experience" }}</h2>
+  <ul class="timeline">
+    {{ range . }}
+    <li>
+      <div class="tl-period">{{ .period }}</div>
+      <div class="tl-body">
+        <div class="tl-title">{{ .role }}</div>
+        <div class="tl-org">{{ .org }}</div>
+        {{ with .desc }}<p class="tl-desc">{{ . }}</p>{{ end }}
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
+
+{{ $js := resources.Get "js/home.js" | resources.Minify | resources.Fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{ end }}

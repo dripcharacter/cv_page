@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    {{ partial "social.html" . }}
+    <div class="colophon">
+      <span>© {{ now.Year }} {{ .Site.Params.author }}</span>
+      <span class="sep">·</span>
+      <span>{{ i18n "powered_by" }}</span>
+    </div>
+  </div>
+</footer>

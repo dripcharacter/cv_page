@@ -1,0 +1,84 @@
+# ============================================================
+#  Hugo configuration  —  single-page CV / personal site
+# ============================================================
+# baseURL is overridden by the GitHub Actions deploy workflow,
+# so it works for both user pages (user.github.io) and
+# project pages (user.github.io/repo). Keep a sane default.
+baseURL = "https://dripcharacter.github.io/cv_page/"
+
+title = "Kim Min-seok"
+
+# --- Multilingual (English + Korean) -------------------------
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+enableRobotsTXT = true
+# Single page: no taxonomy/term pages (project tags are filtered client-side)
+disableKinds = ["taxonomy", "term"]
+
+# --- Languages -----------------------------------------------
+[languages]
+  [languages.en]
+    label = "English"
+    locale = "en-US"
+    weight = 1
+    title = "Kim Min-seok"
+    [languages.en.params]
+      description = "Kim Min-seok — PhD student at KAIST ANLAB. Systems, AI accelerators and networking."
+
+  [languages.ko]
+    label = "한국어"
+    locale = "ko-KR"
+    weight = 2
+    title = "김민석"
+    [languages.ko.params]
+      description = "김민석 — KAIST ANLAB 박사과정. 시스템, AI 가속기, 네트워킹."
+
+# --- Site-wide params ----------------------------------------
+[params]
+  author = "Kim Min-seok"
+  defaultLang = "en"
+  # How many recent news items to show in the home "News" section
+  newsLimit = 4
+  email = "mskim8646@kaist.ac.kr"
+  photo = "/images/profile.jpg"
+  # Social / academic links (leave blank to hide)
+  github = "https://github.com/dripcharacter"
+  linkedin = "https://www.linkedin.com/in/minseok-kim-21490021a"
+  cvPdf = "/files/Minseok_CV.pdf"
+  # Google Scholar — not ready yet. Uncomment and fill in when your profile exists:
+  # scholar = "https://scholar.google.com/citations?user=YOUR_ID"
+  scholar = ""
+  orcid = ""
+  twitter = ""
+
+# --- Markup --------------------------------------------------
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    noClasses = false
+
+# --- Navigation: anchors into the single page ----------------
+# Labels translated per language via i18n using `identifier`.
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    url = "/#about"
+    weight = 1
+  [[menu.main]]
+    identifier = "news"
+    url = "/#news"
+    weight = 2
+  [[menu.main]]
+    identifier = "publications"
+    url = "/#publications"
+    weight = 3
+  [[menu.main]]
+    identifier = "education"
+    url = "/#education"
+    weight = 4
+  [[menu.main]]
+    identifier = "experience"
+    url = "/#experience"
+    weight = 5

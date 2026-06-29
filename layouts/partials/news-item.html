@@ -1,0 +1,9 @@
+{{/* Renders one news entry. Context (.) is the news dict. */}}
+<li class="news-item">
+  <div class="news-date">{{ .date }}</div>
+  <div class="news-content">
+    {{ with .title }}<div class="news-title">{{ . }}</div>{{ end }}
+    {{ with .tags }}<div class="tags">{{ range . }}<span class="tag">{{ . }}</span>{{ end }}</div>{{ end }}
+    {{ with .body }}<p class="news-body">{{ . }}</p>{{ end }}
+  </div>
+</li>

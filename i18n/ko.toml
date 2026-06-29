@@ -1,0 +1,41 @@
+# Navigation / section titles
+[about]
+other = "소개"
+[education]
+other = "학력"
+[experience]
+other = "경력"
+[publications]
+other = "논문"
+[news]
+other = "소식"
+
+# Labels
+[research_interests]
+other = "연구 관심사"
+[filter_by_tag]
+other = "필터"
+[all_tags]
+other = "전체"
+[search_placeholder]
+other = "논문을 제목·저자·발표처·키워드로 검색…"
+[no_results]
+other = "일치하는 논문이 없습니다."
+
+# News
+[view_all_news]
+other = "전체 소식 보기"
+[news_subtitle]
+other = "논문, 발표, 수상, 연구 이정표 소식입니다."
+[back_home]
+other = "메인으로"
+
+# Misc
+[last_updated]
+other = "마지막 업데이트"
+[download_cv]
+other = "CV 내려받기"
+[email_me]
+other = "이메일"
+[powered_by]
+other = "Hugo로 제작 · GitHub Pages 호스팅"

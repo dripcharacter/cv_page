@@ -1,0 +1,41 @@
+# Navigation / section titles
+[about]
+other = "About"
+[education]
+other = "Education"
+[experience]
+other = "Experience"
+[publications]
+other = "Publications"
+[news]
+other = "News"
+
+# Labels
+[research_interests]
+other = "Research Interests"
+[filter_by_tag]
+other = "Filter"
+[all_tags]
+other = "All"
+[search_placeholder]
+other = "Search publications by title, author, venue or keyword…"
+[no_results]
+other = "No matching publications."
+
+# News
+[view_all_news]
+other = "View all News"
+[news_subtitle]
+other = "Updates on publications, talks, awards, and research milestones."
+[back_home]
+other = "Back to main"
+
+# Misc
+[last_updated]
+other = "Last updated"
+[download_cv]
+other = "Download CV"
+[email_me]
+other = "Email"
+[powered_by]
+other = "Built with Hugo · Hosted on GitHub Pages"
