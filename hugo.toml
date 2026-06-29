@@ -41,11 +41,11 @@ disableKinds = ["taxonomy", "term"]
   # How many recent news items to show in the home "News" section
   newsLimit = 4
   email = "mskim8646@kaist.ac.kr"
-  photo = "/images/profile.jpg"
+  photo = "images/profile.jpg"
   # Social / academic links (leave blank to hide)
   github = "https://github.com/dripcharacter"
   linkedin = "https://www.linkedin.com/in/minseok-kim-21490021a"
-  cvPdf = "/files/Minseok_CV.pdf"
+  cvPdf = "files/Minseok_CV.pdf"
   # Google Scholar — not ready yet. Uncomment and fill in when your profile exists:
   # scholar = "https://scholar.google.com/citations?user=YOUR_ID"
   scholar = ""
