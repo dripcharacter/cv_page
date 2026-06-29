@@ -12,6 +12,6 @@
     {{ end }}
   </ul>
 
-  <p class="back"><a href="{{ "/#news" | relLangURL }}">← {{ i18n "back_home" }}</a></p>
+  <p class="back"><a href="{{ .Site.Home.RelPermalink }}#news">← {{ i18n "back_home" }}</a></p>
 </article>
 {{ end }}

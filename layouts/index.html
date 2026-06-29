@@ -41,7 +41,7 @@
 <section class="section" id="news">
   <div class="section-head">
     <h2>{{ i18n "news" }}</h2>
-    <a class="see-all" href="{{ "/news/" | relLangURL }}">{{ i18n "view_all_news" }} →</a>
+    {{ with $.Site.GetPage "/news" }}<a class="see-all" href="{{ .RelPermalink }}">{{ i18n "view_all_news" }} →</a>{{ end }}
   </div>
   {{ $limit := $.Site.Params.newsLimit | default 5 }}
   <ul class="news-list">

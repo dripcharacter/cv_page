@@ -1,19 +1,20 @@
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="{{ "/#top" | relLangURL }}">{{ .Params.name | default .Site.Title }}</a>
+    {{ $home := .Site.Home.RelPermalink }}
+    <a class="brand" href="{{ $home }}#top">{{ .Params.name | default .Site.Title }}</a>
 
     <nav class="nav" id="nav">
       {{ range .Site.Menus.main }}
         {{ $label := i18n (.Identifier | default "") | default .Name }}
-        <a href="{{ .URL | relLangURL }}" class="nav-link" data-nav="{{ .Identifier }}">{{ $label }}</a>
+        <a href="{{ $home }}#{{ .Identifier }}" class="nav-link" data-nav="{{ .Identifier }}">{{ $label }}</a>
       {{ end }}
     </nav>
 
     <div class="lang-switch">
       {{ $page := . }}
-      {{ $defaultLang := .Site.Params.defaultLang | default "en" }}
       {{ range hugo.Sites }}
         {{ $lang := .Language }}
+        {{ $siteHome := .Home.RelPermalink }}
         {{ if eq $lang.Lang $page.Site.Language.Lang }}
           <span class="lang-link active">{{ $lang.Label }}</span>
         {{ else }}
@@ -21,10 +22,7 @@
           {{ range $page.AllTranslations }}
             {{ if eq .Language.Lang $lang.Lang }}{{ $target = .RelPermalink }}{{ end }}
           {{ end }}
-          {{ if not $target }}
-            {{ $home := cond (eq $lang.Lang $defaultLang) "/" (printf "/%s/" $lang.Lang) }}
-            {{ $target = $home | relURL }}
-          {{ end }}
+          {{ if not $target }}{{ $target = $siteHome }}{{ end }}
           <a href="{{ $target }}" class="lang-link">{{ $lang.Label }}</a>
         {{ end }}
       {{ end }}
